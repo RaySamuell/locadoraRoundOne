@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+
+#background{
+    background-image: url(cropped-1280-1024-201532.jpg) ;
+    background-attachment: fixed;
+}
+
+#container{
+    background-color: rgba(0, 0, 0, 0.239);       
+    /*rgba(255, 255, 255, 0.239) , rgba(255, 255, 255, 0.496) */
+    border-radius: 5px;
+}
+
+#titulo{   
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px ;
+    font-weight:500;
+    text-transform:uppercase;
+    text-decoration:none;
+    text-align: center;
+    /* color:#16151b; */
+    color: rgb(255, 255, 255) ;
+}
+
+#lista{   
+    font-family: 'Oswald', sans-serif;
+    font-weight:500;
+    text-transform:uppercase;
+    text-decoration:none;
+    text-align: center;
+    /* color:#16151b; */
+    color: rgb(0, 0, 0) ;
+}
+
+/* a{
+    text-decoration: none ;
+    color: white ;
+} */
+
+/* link que ainda não foi visitado 
+a:link {
+    color: red;
+ }
+ 
+  link que foi visitado 
+ a:visited {
+     color: green;
+ }
+ 
+  mouse over 
+ a:hover {
+     color: #000000;
+ }
+ 
+  link selecionado 
+ a:active {
+     color: blue;
+ }
+
+ *\

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="shop.css">
+
+</head>
+<body id="background">
+
+    <div class="container mt-5">
+
+        <h1 class="mb-5" id="titulo" style="text-align: center ;" > CARRINHO </h1>
+
+        <div class="row" id="lista" >
+            <div class="col-4 offset-4" id="container">
+                
+            <div class="mt-3" id="itens"> </div>
+            <div>Total :
+                <span id="total"></span>
+            </div>
+
+            
+            <div class="col">
+                <button class="btn btn-outline-dark mt-3 mb-1" type="button" onclick=" localStorage.clear(); location.reload();">
+                    Limpar carrinho
+                </button>
+                
+                <a href="Pagamento.html">
+                    <button class="btn btn-outline-dark mt-3 mb-1" type="button" onclick="pegarValor()">
+                        Formas de pagamentos
+                    </button>
+                </a>
+
+                <div class="row">
+                    <div class="col">
+                        <a href="locadora.html">
+                            <button class="btn btn-outline-dark mb-3" >Voltar para o inicio</button>    
+                        </a>              
+                    </div>
+                </div>
+
+            </div>
+            
+            </div>
+        </div>
+    </div>   
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

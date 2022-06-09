@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round One</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="locadora.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body id="background" onload="timer()">
+
+  <!-- <div id="timer" style="color:black; font-size: 40px;"></div> -->
+
+  <!-- Navbar e Titulo -->
+
+    <div class="container-fluid">
+
+        <h1 id="titulo"> ROUND ONE! </h1>
+
+        <div>
+            <nav>
+                <a href="Cliente.html">Cliente</a>
+                <a href="carrinho.html">Carrinho</a>
+                <a href="">Rede Sociais</a>
+                <a href="Sobre.html">Sobre</a>
+                <a href="FaleConosco.html">Fale Conosco</a>
+            </nav>
+
+             <!-- Unsplash copyright -->
+
+            <!-- <a class="thx"
+                style="background-color:black ; color:white ; text-decoration: none ;
+                padding: 4px 6px ; font-family:-apple-system , BlinkMacSystemFont, San Francisco , Helvetica Neue , Helvetica, Ubuntu, Roboto, Noto, Segoe UI , Arial, sans-serif ; font-size: 12px ; font-weight: bold ; line-height: 1.2 ; display: inline-block ; border-radius: 3px ; "
+                target="_blank"
+                href="https://twitter.com/rszinho"
+                rel="noopener noreferrer" title="Clica aii e segue prfv!!">
+
+                <span style="display: inline-block ; padding:2px 3px;">
+        
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;"
+                        viewBox="0 0 32 32">
+
+                        <title></title>
+
+                        <path
+                            d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z">
+                        </path>
+                    </svg>
+                </span>
+                <span style="display:inline-block;padding:2px 3px;">rszinho</span>
+            </a> -->
+        </div>
+
+
+
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col" style="background-color:  rgba(0, 0, 0, 0.239); border-radius: 5px;">
+              <div id="timer" style="text-align: right ;">TEMPO</div>
+            </div>
+          </div>
+        </div>
+        
+        
+
+
+
+        <div class="container mt-5 mb-5" style="background-color:  rgba(0, 0, 0, 0.239); border-radius: 5px;">
+            <div class="row">
+              <div class="col">
+                <div class="row">
+                  <div class="col">
+                        <div class="row row-cols-1 row-cols-md-6 g-4 mt-1">
+      
+                          <!-- COMEÇO DA PRIMEIRA LISTA -->
+      
+                          <div class="col">
+                            <div class="card">
+
+                              <a href="aquaman.html">
+                                <img src="aquaman.jpg" class="card-img-top" alt="...">
+                              </a>
+
+                              <div class="card-body">
+      
+                                <td class="prodtd">
+
+                                  <div id="nome1"  class="nomeprod"><h5 style= "text-align: center ;" >Aquaman</h5></div>
+
+                                  <div id="preco1" class="preco" style="text-align: center ; font-weight: 500;">5,00</div>
+
+                                  <p class="card-text"></p>
+
+                                </td> 
+
+                              </div>
+                            </div>
+                          </div>
+      
+                          <div class="col">
+                            <div class="card">
+
+                              <a href="TheBatman.html">
+                                <img src="batman.jpg" class="card-img-top" alt="...">
+                              </a>
+
+                              <div class="card-body">
+
+                                <td>
+                                  <div id="nome2"  class="nomeprod"><h5 style= "text-align: center ;" >The Batman</h5></div>       
+                                                      
+                                  <div id="preco2" class="preco" style="text-align: center ; font-weight: 500;">6,00</div>
+
+                                  <p class="card-text"></p>
+
+                                </td>
+      
+                              </div>
+                            </div>
+                          </div>
+      
+                          <div class="col">
+                            <div class="card">
+
+                              <a href="Jogador.html">
+                                <img src="jogador.jpg" class="card-img-top" alt="...">
+                              </a>
+
+                              <div class="card-body">
+
+                                <td>
+                                  <div id="nome3"  class="nomeprod"><h5 style= "text-align: center ;" >Jogador Nº 1</h5></div>      
+
+                                  <div id="preco3" class="preco" style="text-align: center ; font-weight: 500;">7,30</div>
+
+                                  <p class="card-text"></p>
+
+                                </td>
+
+                              </div>
+                            </div>
+                          </div>
+      
+                          <div class="col">
+                            <div class="card">
+                              
+                              <a href="JusticeLeague.html">
+                                <img src="justiceleague.jpg" class="card-img-top" alt="...">
+                              </a>
+
+                              <div class="card-body">
+
+                                <td>
+                                  <div id="nome4"  class="nomeprod"><h5 style= "text-align: center ;" >Justice League: The Snyder Cut</h5></div> 
+
+                                  <div id="preco4" class="preco" style="text-align: center ; font-weight: 500;">6,00</div>
+
+                                  <p class="card-text"></p>
+
+                                </td>
+      
+                              </div>
+                            </div>
+                          </div>
+      
+                          <div class="col">
+                            <div class="card">
+
+                              <a href="KimetsuNoYaiba.html">
+                                <img src="mugentrain.jpg" class="card-img-top" alt="...">
+                              </a>
+
+                              <div class="card-body">
+
+                                <td>
+
+                                  <div id="nome5"  class="nomeprod"><h5 style= "text-align: center ;" >Kimetsu no Yaiba: Mugen Train</h5></div>      
+
+                                  <div id="preco5" class="preco" style="text-align: center ; font-weight: 500;">7,00</div>
+
+                                  <p class="card-text"></p>
+
+                                </td>
+      
+                              </div>
+                            </div>
+                          </div>
+      
+                          <div class="col">
+                            <div class="card">
+
+                              <a href="ScottPilgrim.html">
+                                <img src="scottpilgrim.jpg" class="card-img-top" alt="...">
+                              </a>
+
+                              <div class="card-body">
+
+                                <td>
+
+                                  <div id="nome6"  class="nomeprod"><h5 style= "text-align: center ;" >Scoot Pilgrim VS The World</h5></div>       
+
+                                  <div id="preco6" class="preco" style="text-align: center ; font-weight: 500;">7,59</div>
+
+                                  <p class="card-text"></p>
+
+                                </td>
+      
+                                </td>
+                              </div>
+                            </div>
+                          </div>
+      
+                          <!-- FIM DA PRIMEIRA LISTA -->
+      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col mt-2">
+                    <div class="row row-cols-1 row-cols-md-6 g-4">
+                      
+                      <!-- COMEÇO DA SEGUNDA LISTA -->
+                      
+                      <div class="col">
+                        <div class="card">
+
+                          <a href="MazeRunner1.html">
+                            <img src="mazerunner1.jpg" class="card-img-top" alt="...">
+                          </a>
+
+                          <div class="card-body">
+
+                            <td>
+
+                              <div id="nome7"  class="nomeprod"><h5 style= "text-align: center ;" >Maze Runner: Run or Die</h5></div>                        
+
+                              <div id="preco7" class="preco" style="text-align: center ; font-weight: 500;">4,39</div>
+
+                              <p class="card-text"></p>
+
+                            </td>
+      
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="col">
+                        <div class="card">
+
+                          <a href="MazeRunner2.html">
+                            <img src="mazerunner2.jpg" class="card-img-top" alt="...">
+                          </a>
+
+                          <div class="card-body">
+
+                            <td>
+
+                              <div id="nome8"  class="nomeprod"><h5 style= "text-align: center ;" >Maze Runner: Trial by Fire</h5></div>                
+
+                              <div id="preco8" class="preco" style="text-align: center ; font-weight: 500;">4,49</div>
+
+                              <p class="card-text"></p>
+
+                            </td>
+                            
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="col">
+                        <div class="card">
+
+                          <a href="MazeRunner3.html">
+                            <img src="mazerunner3.jpg" class="card-img-top" alt="...">
+                          </a>
+
+                          <div class="card-body">
+
+                            <td>
+
+                              <div id="nome9"  class="nomeprod"><h5 style= "text-align: center ;" >Maze Runner: The Death Cure</h5></div>                      
+
+                              <div id="preco9" class="preco" style="text-align: center ; font-weight: 500;">4,59</div>
+
+                              <p class="card-text"></p>
+
+                            </td>
+       
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="col">
+                        <div class="card">
+
+                          <a href="TheAmazing.html">
+                            <img src="homemaranhaespetacular1.jpg" class="card-img-top" alt="...">
+                          </a>
+
+                          <div class="card-body">
+
+                            <td>
+
+                              <div id="nome10"  class="nomeprod"><h5 style= "text-align: center ;" >The Amazing Spider-Man</h5></div>                       
+
+                              <div id="preco10" class="preco" style="text-align: center ; font-weight: 500;">5,00</div>
+
+                              <p class="card-text"></p>
+
+                            </td>
+                            
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="col">
+                        <div class="card">
+
+                          <a href="ForFromHome.html">
+                            <img src="homemaranhaforfromhome.jpg" class="card-img-top" alt="...">
+                          </a>
+
+                          <div class="card-body">
+
+                            <td>
+                              <div id="nome11"  class="nomeprod"><h5 style= "text-align: center ;" >Spider-Man For From Home</h5></div>                     
+
+                              <div id="preco11" class="preco" style="text-align: center ; font-weight: 500;">5,40</div>
+
+                              <p class="card-text"></p>
+
+                            </td>
+      
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="col">
+                        <div class="card">
+
+                          <a href="NoWayHome.html">
+                            <img src="homemaranhanowayhome.jpg" class="card-img-top" alt="...">
+                          </a>
+
+                          <div class="card-body">
+
+                            <td>
+
+                              <div id="nome12"  class="nomeprod"><h5 style= "text-align: center ;" >Spider-Man No Way Home</h5></div>                     
+
+                              <div id="preco12" class="preco" style="text-align: center ; font-weight: 500;">5,60</div>
+
+                              <p class="card-text"></p>
+
+                            </td>
+      
+                          </div>
+                        </div>
+                      </div>
+      
+                      <!-- FIM DA SEGUNDA LISTA -->
+      
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col mt-2">
+                    <div class="row row-cols-1 row-cols-md-6 g-4">
+      
+                      <!-- COMEÇO DA TERCEIRA LISTA -->
+      
+                      <div class="col">
+                        <div class="card">
+
+                          <a href="SempreAoSeuLado.html">
+                            <img src="sempreaoseulado.jpg" class="card-img-top" alt="...">
+                          </a>
+
+                          <div class="card-body">
+
+                            <td>
+
+                              <div id="nome13"  class="nomeprod"><h5 style= "text-align: center ;" >Sempre ao seu lado</h5></div>                      
+
+                              <div id="preco13" class="preco" style="text-align: center ; font-weight: 500;">7,00</div>
+
+                              <p class="card-text"></p>
+
+                            </td>
+      
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="col">
+                        <div class="card">
+
+                          <a href="Zombiland.html">
+                            <img src="zombiland.jpg" class="card-img-top" alt="...">
+                          </a>
+
+                          <div class="card-body">
+
+                            <td>
+
+                              <div id="nome14"  class="nomeprod"><h5 style= "text-align: center ;" >Zombiland</h5></div>   
+
+                              <div id="preco14" class="preco" style="text-align: center ; font-weight: 500;">3,59</div>
+                              
+                              <p class="card-text"></p>
+
+                            </td>
+      
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col">
+                        <div class="card">
+
+                          <a href="Simpsons.html">
+                            <img src="simpsons.jpg" class="card-img-top" alt="...">
+                          </a>
+
+                          <div class="card-body">
+
+                            <td>
+
+                              <div id="nome15"  class="nomeprod"><h5 style= "text-align: center ;" >Simpsons</h5></div>  
+                                                   
+                              <div id="preco15" class="preco" style="text-align: center ; font-weight: 500;">6,00</div>
+
+                              <p class="card-text"></p>
+
+                            </td>
+      
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="col">
+                        <div class="card">
+
+                          <a href="Hancock.html">
+                            <img src="hanconck.jpg" class="card-img-top" alt="...">
+                          </a>
+
+                          <div class="card-body">
+
+                            <td>
+
+                              <div id="nome16"  class="nomeprod"><h5 style= "text-align: center ;" >Hancock</h5></div> 
+
+                              <div id="preco16" class="preco" style="text-align: center ; font-weight: 500;">5,00</div>
+
+                              <p class="card-text"></p>
+
+                            </td>
+      
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="col">
+                        <div class="card">
+
+                          <a href="IRobot.html">
+                            <img src="irobot.jpg" class="card-img-top" alt="...">
+                          </a>
+
+                          <div class="card-body">
+
+                            <td>
+
+                              <div id="nome17"  class="nomeprod"><h5 style= "text-align: center ;" >I Robot</h5></div>
+
+                              <div id="preco17" class="preco" style="text-align: center ; font-weight: 500;">5,20</div>
+
+                              <p class="card-text"></p>
+
+                            </td>
+      
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="col">
+                        <div class="card">
+
+                          <a href="Captain.html">
+                            <img src="captainamerican.jpg" class="card-img-top" alt="...">
+                          </a>
+
+                          <div class="card-body">
+
+                            <td>
+
+                              <div id="nome18"  class="nomeprod"><h5 style= "text-align: center ;" >Captain American Civil War</h5></div>                  
+
+                              <div id="preco18" class="preco" style="text-align: center ; font-weight: 500;">6,59</div>
+
+                              <p class="card-text"></p>
+
+                            </td>
+      
+                          </div>
+                        </div>
+                      </div>
+                      
+      
+                      <!-- FIM DA TERCEIRA LISTA -->
+      
+                    </div>
+                  </div>
+                </div>
+
+                <br> 
+
+              </div>             
+            </div>           
+          </div>
+        </div>
+    </div> 
+    
+</body>
+
+</html>

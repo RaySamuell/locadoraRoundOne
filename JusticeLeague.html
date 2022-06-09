@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="filmes.css">
+    <script src="script.js"></script>
+
+</head>
+<body id="background">
+
+    <div class="container mb-5" id="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card-body" id="card1">
+
+                    <img src="justiceleague.jpg" class="card-img-top" alt="...">
+
+                    <!-- <td class="prodtd">
+
+                      <div id="nome1"  class="nomeprod"><h5 style= "text-align: center ;" >Aquaman</h5></div>
+
+                      <div id="preco1" class="preco" style="text-align: center ; font-weight: 500;">5,00</div>
+
+                      <p class="card-text"></p>
+
+                    </td>  -->
+
+                </div>
+            </div>
+            <div class="col-7 offset-1">
+
+                <h1 class="titulo">JUSTICE LEAGUE THE SNYDER CUT </h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sed consectetur architecto, amet
+                    harum placeat illum iusto autem culpa excepturi quas? Neque ullam, id enim corporis laboriosam esse
+                    necessitatibus a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, deleniti.
+                    Repudiandae, enim molestiae voluptas laborum, voluptate incidunt, nobis quasi praesentium aliquam
+                    odit est maiores similique reprehenderit tempora exercitationem officia. Obcaecati? Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Dignissimos, numquam? Quis voluptatibus neque eaque
+                    laudantium repellendus? Corrupti, beatae alias quibusdam, ab a consectetur cum in voluptates omnis
+                    odit itaque assumenda. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+                    veniam incidunt fugit et fuga possimus, rerum iure consequuntur tenetur labore distinctio saepe odit
+                    ullam, quisquam numquam porro quidem non voluptatibus.
+                </p>
+
+                <div class="row mt-5">
+
+                    <div class="col-3">
+                        <h1>R$ 6.00</h1>
+                    </div>
+
+                    <div class="col-2" style="margin-top: 6px ;">
+                        <input class="form-control" type="number" value="0" min="1" max="10" id="qtd4">
+                    </div>
+
+                    <div class="col-2">
+                        <div class="row">
+                            <a href="locadora.html">
+                                <button class="btn btn-outline-dark" type="button" id="adicionar4" id="produto4" style="margin: 5px; text-align: center;" onclick="AddCarrinho('Justice League', document.getElementById('qtd4').value, '6.00', 4)"> Comprar </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="row">
+                            <a href="carrinho.html">
+                                <button class="btn btn-outline-dark" type="button" style="margin: 5px ; text-align: center;"> Carrinho </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="row">
+                            <a href="locadora.html">
+                                <button class="btn btn-outline-dark" type="button" style="margin: 5px ; text-align: center;"> Voltar </button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    function AddCarrinho(produto, qtd, valor, posicao)
+    {
+        localStorage.setItem("produto" + posicao, produto);
+        localStorage.setItem("qtd" + posicao, qtd);
+        valor = valor * qtd;
+        localStorage.setItem("valor" + posicao, valor);
+        alert("Produto adicionado ao carrinho!");
+    }
+</script>
+
+<script src="zoom.js"></script>
+
+</html>

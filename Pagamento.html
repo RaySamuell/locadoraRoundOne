@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="shop.css">
+   
+
+</head>
+<body id="background" onload="passarValor()" >
+
+    <div class="container-fluid">
+
+        <h1 class="mt-5" id="titulo" style="text-align: center ;" > FORMA DE PAGAMENTO </h1>
+
+        <div class="col mt-5" id="container">
+            <div class="row">
+                    <div class="col-6 offset-3 mt-5 mb-5">
+                        
+                            <div class="card justify-content-center" style=" background-color: rgba(255, 255, 255, 0.331);" >
+                                <div class="card-body justify-content-center">
+                                    <div class="row p-3 justify-content-center">
+                                        
+                                        <div class="col-6  align-content-center">
+                                            <div class="form-check pb-4">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="ipt1"  onclick="if(document.getElementById('av').disabled==true){
+                                                   document.getElementById('av').disabled=true, document.getElementById('card').disabled = true, document.getElementById('card').value = ''
+                                                }
+                                                ">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                  À vista
+                                                </label>
+                                              </div>
+                                              <br><br>
+                                              
+                                              <div class="form-check pt-2">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="ipt2" onclick="if(document.getElementById('card').disabled = true){
+                                                    document.getElementById('card').disabled = false,
+                                                    document.getElementById('av').disabled=true
+                                                }">
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                  Cartão de crédito
+                                                </label>
+                                              </div>
+                                        </div>
+                                        
+                                        <div class="col-6">
+                                            <input class="form-control" type="text" name="av" id="av" disabled >
+                                            <br><br>
+                                            <select class="form-select" aria-label="Default select example" disabled id="card" onchange="parcelado()">
+                                                <option selected value="Parcelas"></option>
+                                                <option value="2" id="dois" >2</option>
+                                                <option value="3" id="tres" >3</option>
+                                                <option value="4" id="quatro">4</option>
+                                            </select>
+                                            <input class="form-control mt-1" type="text" name="" id="ray" placeholder="Valor Parcelado " disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

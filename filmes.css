@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+
+*{
+  box-sizing: border-box !important ;
+}
+
+body{
+  display: flex !important ;
+  align-items: center !important ;
+  justify-content: center !important ;
+  margin: 0 !important ;
+  min-height: 100vh !important ;
+}
+
+#card1{
+  overflow: hidden !important ;
+}
+
+#background{
+    background-image: url(cropped-1280-1024-201532.jpg) ;
+    background-attachment: fixed;
+}
+
+#container{
+    background-color: rgba(255, 255, 255, 0.239); 
+    border-radius: 5px;
+}
+
+img{
+  transform-origin: center center ;
+  object-fit: cover ;
+  height: 100% ;
+  width: 100% ;
+}
+
+.titulo{
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px ;
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  text-align: center;
+  /* color:#16151b; */
+  color: black ;
+}
